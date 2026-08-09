@@ -1,0 +1,426 @@
+You are an expert Business Analyst with 15+ years of experience. Generate a comprehensive, client-ready Business Requirement Document (BRD) based on the following client input. 
+
+IMPORTANT: Follow the EXACT structure, format, and level of detail shown in the template below. The BRD must be comprehensive, professional, client-ready, and include both business and technical aspects. Use tables, emojis, code blocks, and visual formatting to make it engaging and easy to read.
+
+Client Input:
+{input_text}
+
+---
+
+# 📘 BUSINESS REQUIREMENTS DOCUMENT (BRD)
+
+## 1. Project Overview
+
+**Project Name:** [Project Name]  
+**Objective:**  
+[2-3 sentence overview of the project's main objective and purpose. Explain what problem it solves and its business value.]
+
+**Project Type:** [Software/Hardware/Business Process]  
+**Target Users:** [Primary user groups]  
+**Business Value:** [Key business benefits]
+
+---
+
+## 2. Stakeholders
+
+| Role | Responsibility |
+|------|----------------|
+| [Stakeholder 1] | [Their responsibility] |
+| [Stakeholder 2] | [Their responsibility] |
+| [Stakeholder 3] | [Their responsibility] |
+[Continue as needed...]
+
+---
+
+## 3. User Roles & Access
+
+### 3.1 Roles
+
+* **[Role 1]** - [Brief description]
+* **[Role 2]** - [Brief description]
+* **[Role 3]** - [Brief description]
+[Continue as needed...]
+
+### 3.2 Role Capabilities
+
+| Feature | [Role 1] | [Role 2] | [Role 3] |
+|---------|----------|----------|----------|
+| [Feature 1] | ✅/❌ | ✅/❌ | ✅/❌ |
+| [Feature 2] | ✅/❌ | ✅/❌ | ✅/❌ |
+| [Feature 3] | ✅/❌ | ✅/❌ | ✅/❌ |
+[Continue as needed...]
+
+---
+
+## 4. Application Scope
+
+### 4.1 [Application/Module Name]
+
+[Description of the application or module]
+
+#### Core Features
+
+1. **[Feature 1]**
+   * [Sub-feature or detail]
+   * [Sub-feature or detail]
+   * [Sub-feature or detail]
+
+2. **[Feature 2]**
+   * [Sub-feature or detail]
+   * [Sub-feature or detail]
+
+3. **[Feature 3]**
+   * [Sub-feature or detail]
+   * [Sub-feature or detail]
+[Continue as needed...]
+
+### 4.2 [Additional Module/Application]
+
+[Description]
+
+#### Key Capabilities
+
+* [Capability 1]
+* [Capability 2]
+* [Capability 3]
+[Continue as needed...]
+
+---
+
+## 5. Business Requirements
+
+### 5.1 BR-001: [Requirement Name]
+**Priority:** [High/Medium/Low]  
+**Description:** [Clear description of the requirement]
+
+**Business Rules:**
+- [Rule 1]
+- [Rule 2]
+- [Rule 3]
+[Continue as needed...]
+
+**Acceptance Criteria:**
+- ✅ [Criterion 1]
+- ✅ [Criterion 2]
+- ✅ [Criterion 3]
+[Continue as needed...]
+
+---
+
+### 5.2 BR-002: [Requirement Name]
+[Follow same format as BR-001]
+
+---
+
+[Continue with BR-003, BR-004, etc. for all business requirements]
+
+---
+
+## 6. Functional Requirements
+
+### 6.1 FR-001: [Requirement Name]
+**Requirement:** [Clear statement of the functional requirement]
+
+**Implementation Details:**
+- [Detail 1]
+- [Detail 2]
+- [Detail 3]
+[Continue as needed...]
+
+**User Flow:**
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+[Continue as needed...]
+
+---
+
+[Continue with FR-002, FR-003, etc. for all functional requirements]
+
+---
+
+## 7. Technical Overview
+
+### 7.1 System Architecture
+
+```
+[High-level architecture diagram in text format]
+
+[Component 1]  --->  [Component 2]
+                        |
+[Component 3]  --->  [Component 4]
+                        |
+                    [Component 5]
+```
+
+### 7.2 Technology Stack
+
+#### Frontend
+
+| Layer | Technology |
+|-------|------------|
+| [Layer 1] | [Technology] |
+| [Layer 2] | [Technology] |
+| [Layer 3] | [Technology] |
+
+#### Backend
+
+| Layer | Technology |
+|-------|------------|
+| [Layer 1] | [Technology] |
+| [Layer 2] | [Technology] |
+| [Layer 3] | [Technology] |
+
+#### Infrastructure/Cloud
+
+| Service | Usage |
+|---------|-------|
+| [Service 1] | [Purpose] |
+| [Service 2] | [Purpose] |
+| [Service 3] | [Purpose] |
+
+---
+
+## 8. Key Modules/Components
+
+### 8.1 [Module Name]
+
+* [Feature/Function 1]
+* [Feature/Function 2]
+* [Feature/Function 3]
+[Continue as needed...]
+
+---
+
+[Continue for all key modules...]
+
+---
+
+## 9. Database Design (High Level)
+
+### Key Tables
+
+* [table_name_1] - [Purpose]
+* [table_name_2] - [Purpose]
+* [table_name_3] - [Purpose]
+[Continue as needed...]
+
+---
+
+## 10. Security Requirements
+
+* [Security requirement 1]
+* [Security requirement 2]
+* [Security requirement 3]
+[Continue as needed...]
+
+---
+
+## 11. Non-Functional Requirements
+
+* **Performance:** [Requirements]
+* **Scalability:** [Requirements]
+* **Availability:** [Requirements]
+* **Usability:** [Requirements]
+* **Security:** [Requirements]
+* **Compliance:** [Requirements]
+
+---
+
+## 12. User Stories
+
+### US-001: [Story Title]
+**As a** [User Type]  
+**I want to** [Action/Feature]  
+**So that** [Business Value/Benefit]
+
+**Acceptance Criteria:**
+- ✅ [Criterion 1]
+- ✅ [Criterion 2]
+- ✅ [Criterion 3]
+[Continue as needed...]
+
+---
+
+[Continue with US-002, US-003, etc. for all user stories]
+
+---
+
+## 13. UI/UX Requirements
+
+### 13.1 [Screen/Component Name]
+
+* **Layout:** [Description]
+* **Key Elements:**
+  - [Element 1]
+  - [Element 2]
+  - [Element 3]
+* **User Interactions:** [Description]
+
+---
+
+[Continue for all major screens/components...]
+
+---
+
+## 14. Acceptance Criteria Summary
+
+### 14.1 Functional Acceptance
+- ✅ [Criterion 1]
+- ✅ [Criterion 2]
+- ✅ [Criterion 3]
+[Continue as needed...]
+
+### 14.2 Technical Acceptance
+- ✅ [Criterion 1]
+- ✅ [Criterion 2]
+- ✅ [Criterion 3]
+[Continue as needed...]
+
+### 14.3 UI/UX Acceptance
+- ✅ [Criterion 1]
+- ✅ [Criterion 2]
+- ✅ [Criterion 3]
+[Continue as needed...]
+
+---
+
+## 15. Business Rules Summary
+
+1. **[Rule Name]**: [Description]
+2. **[Rule Name]**: [Description]
+3. **[Rule Name]**: [Description]
+[Continue as needed...]
+
+---
+
+## 16. Assumptions & Constraints
+
+### Assumptions
+* [Assumption 1]
+* [Assumption 2]
+* [Assumption 3]
+[Continue as needed...]
+
+### Constraints
+* [Constraint 1]
+* [Constraint 2]
+* [Constraint 3]
+[Continue as needed...]
+
+---
+
+## 17. Future Enhancements (Out of Scope)
+
+1. **[Enhancement Name]**: [Brief description]
+2. **[Enhancement Name]**: [Brief description]
+3. **[Enhancement Name]**: [Brief description]
+[Continue as needed...]
+
+---
+
+## 18. Success Criteria
+
+* [Criterion 1]
+* [Criterion 2]
+* [Criterion 3]
+[Continue as needed...]
+
+---
+
+## 19. Deliverables
+
+* ✅ BRD (this document)
+* ✅ Technical Architecture
+* ✅ API Specifications
+* ✅ Database Schema
+* ✅ UI/UX Wireframes (if applicable)
+[Continue as needed...]
+
+---
+
+## 20. Glossary
+
+| Term | Definition |
+|------|------------|
+| [Term 1] | [Definition] |
+| [Term 2] | [Definition] |
+| [Term 3] | [Definition] |
+[Continue as needed...]
+
+---
+
+## 21. Appendix
+
+### 21.1 [Appendix Section Name]
+
+[Any additional information, references, diagrams, etc.]
+
+---
+
+**Document End**
+
+---
+
+## CRITICAL INSTRUCTIONS - MUST FOLLOW:
+
+1. **Structure**: Follow the EXACT section numbering and structure shown above. Do not skip any sections.
+
+2. **Formatting**: 
+   - Use proper markdown formatting with headers (#, ##, ###)
+   - Use tables for comparisons, role matrices, and lists
+   - Use emojis (📘, ✅, ❌) to make it visually appealing
+   - Use code blocks for architecture diagrams
+   - Use checkboxes (✅) for acceptance criteria
+   - Use bullet points and numbered lists appropriately
+
+3. **Detail Level**: Be comprehensive and detailed. Each section should be fully developed with actual content, not placeholder text.
+
+4. **Numbering**: Use consistent numbering throughout:
+   - Business Requirements: BR-001, BR-002, BR-003, etc.
+   - Functional Requirements: FR-001, FR-002, FR-003, etc.
+   - User Stories: US-001, US-002, US-003, etc.
+
+5. **Tables**: Use tables extensively for:
+   - Stakeholder roles
+   - Role capabilities matrix
+   - Technology stack
+   - Feature comparisons
+   - Glossary terms
+
+6. **Technical Details**: Include detailed technical information:
+   - System architecture (in text/diagram format)
+   - Technology stack (in table format)
+   - Database design (high-level)
+   - Security requirements
+   - Deployment considerations
+
+7. **Client Voice**: In relevant sections, write as if understanding the client's needs directly.
+
+8. **Completeness**: Ensure ALL sections are filled out with actual content based on the client input. Do not leave placeholder text like "[Description]" - provide real, meaningful content.
+
+9. **Professional Quality**: The BRD should be:
+   - Client-ready for sign-off
+   - Suitable for stakeholder review
+   - Professional and polished
+   - Easy to read and navigate
+   - Comprehensive yet concise
+
+10. **Visual Elements**: 
+    - Use emojis strategically (📘 for documents, ✅ for success, ❌ for not available)
+    - Create clear architecture diagrams in text format
+    - Use tables for better readability
+    - Format code blocks properly
+
+## OUTPUT REQUIREMENTS:
+
+- Generate the complete BRD document
+- Use the exact section structure provided
+- Include all 21 main sections plus subsections
+- Provide detailed, actionable content in each section
+- Use tables, emojis, and visual formatting
+- Ensure professional language and proper business terminology
+- Make it comprehensive enough for development teams to implement
+- Make it client-ready for sign-off and stakeholder review
+
+Generate a professional, detailed, client-ready BRD that matches this structure and quality level exactly. The document should be suitable for direct use in client presentations, sign-offs, and development planning.

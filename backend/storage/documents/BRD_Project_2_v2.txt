@@ -1,0 +1,190 @@
+Here is an updated Business Requirements Document (BRD) incorporating the client feedback:
+
+**Version 2**
+
+**Date:** [Current Date]
+
+**Change Log:**
+* Version number: 2
+* Date of update: [Current Date]
+* Summary of changes:
+	+ Incorporated feedback on data archival and storage
+	+ Clarified roles and responsibilities for data management and reporting
+	+ Updated scope to include trained data or other project data
+
+📘 BUSINESS REQUIREMENTS DOCUMENT (BRD)
+
+## 1. Project Overview
+
+**Project Name:** Mobile Application Development
+**Objective:**
+Develop a mobile application that allows users to view and manage their data efficiently, while ensuring compliance with data archival and security requirements.
+**Project Type:** Software
+**Target Users:** Mobile app users
+**Business Value:** Improved user experience, enhanced data management, and increased efficiency
+
+---
+
+## 2. Stakeholders
+
+| Role | Responsibility |
+|------|----------------|
+| Project Manager | Oversee the project's progress and ensure timely completion |
+| Development Team | Design and develop the mobile application |
+| Quality Assurance Team | Test and validate the mobile application |
+| Client | Provide requirements, review, and approve the final product |
+
+---
+
+## 3. User Roles & Access
+
+### 3.1 Roles
+
+* **Admin** - Manage user data, view reports, and perform audits
+* **Mobile User** - View and manage their own data on the mobile app
+* **IT Team** - Monitor application performance and troubleshoot issues
+
+### 3.2 Role Capabilities
+
+| Feature | Admin | Mobile User | IT Team |
+|---------|----------|----------|----------|
+| Data Management | ✅ | ❌ | ✅ |
+| Reporting | ✅ | ❌ | ✅ |
+| Audit Trail | ✅ | ❌ | ✅ |
+
+---
+
+## 4. Application Scope
+
+### 4.1 Mobile App
+
+The mobile application will allow users to view and manage their data, including:
+
+* **Trained Data List** - View a list of trained data with relevant information
+* **Project Data List** - View a list of project data with relevant information
+* **Archived Data** - Access archived data for historical reference and compliance purposes
+
+#### Core Features
+
+1. **Data Management**
+   * View and manage user data, including leads and branches
+   * Perform audits and generate reports
+2. **Reporting**
+   * Generate reports based on user data
+3. **Audit Trail**
+   * Maintain an audit trail for all user actions
+
+### 4.2 Web (Admin)
+
+The web-based administrative interface will allow administrators to:
+
+* **View Old Records** - View and download old records for audit and reporting purposes
+* **Manage User Data** - Manage user data, including leads and branches
+* **Generate Reports** - Generate reports based on user data
+
+#### Key Capabilities
+
+* Manage user data and perform audits
+* Generate reports and maintain an audit trail
+* Ensure compliance with data archival requirements
+
+---
+
+## 5. Business Requirements
+
+### 5.1 BR-001: Data Management
+
+**Priority:** High
+**Description:** The mobile application must allow users to view and manage their own data, including trained data and project data.
+
+**Business Rules:**
+
+* Users can only view their own data
+* Administrators can view and manage all user data
+* The system will maintain an audit trail for all user actions
+
+**Acceptance Criteria:**
+- ✅ Users can view their own data
+- ✅ Administrators can view and manage all user data
+- ✅ The system maintains an audit trail for all user actions
+
+---
+
+### 5.2 BR-002: Reporting
+
+**Priority:** Medium
+**Description:** The mobile application must generate reports based on user data, including trained data and project data.
+
+**Business Rules:**
+
+* Reports will be generated based on user data
+* Administrators can customize report formats and contents
+* The system will maintain an audit trail for all report generation activities
+
+**Acceptance Criteria:**
+- ✅ Reports are generated based on user data
+- ✅ Administrators can customize report formats and contents
+- ✅ The system maintains an audit trail for all report generation activities
+
+---
+
+## 6. Functional Requirements
+
+### 6.1 FR-001: Data Management
+
+**Requirement:** The mobile application must allow users to view and manage their own data, including trained data and project data.
+
+**Implementation Details:**
+
+* Implement a user-friendly interface for viewing and managing user data
+* Ensure that the system maintains an audit trail for all user actions
+
+**User Flow:**
+1. User logs in to the mobile app
+2. The user views their own data, including trained data and project data
+3. The user can update or delete their own data
+4. The system updates the audit trail with the user's actions
+
+---
+
+## 7. Technical Overview
+
+### 7.1 System Architecture
+
+```
+Frontend (Flutter) -> Backend (Java Spring) -> Database (AWS RDS)
+```
+
+### 7.2 Technology Stack
+
+#### Frontend
+
+| Layer | Technology |
+|-------|------------|
+| UI | Flutter |
+| API | Java Spring |
+
+#### Backend
+
+| Layer | Technology |
+|-------|------------|
+| Business Logic | Java Spring |
+| Database | AWS RDS |
+
+#### Infrastructure/Cloud
+
+| Service | Usage |
+|---------|-------|
+| Amazon S3 | Store application files and data |
+| Amazon RDS | Host the database |
+| AWS Lambda | Handle API requests |
+
+---
+
+## 8. Key Modules/Components
+
+### 8.1 Mobile App
+
+* **Data Management** - Allow users to view and manage their own data, including trained data and project data
+* **Reporting** - Generate reports based on user data
+* **Audit Trail** - Maintain an audit trail for all user actions

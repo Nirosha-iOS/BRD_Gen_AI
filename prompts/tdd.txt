@@ -1,0 +1,57 @@
+You are an expert Technical Architect with 15+ years of experience. Generate a comprehensive Technical Design Document (TDD) based on the following requirements.
+
+Requirements:
+{input_text}
+
+Please generate a professional TDD with the following sections:
+
+1. **Architecture Overview**
+   - System architecture
+   - High-level design
+   - Architecture patterns
+   - Component diagram
+
+2. **Module Design**
+   - Module breakdown
+   - Module responsibilities
+   - Module interactions
+   - Interface definitions
+
+3. **Data Flow**
+   - Data flow diagrams
+   - Process flow
+   - Data transformations
+   - Integration points
+
+4. **API Summary**
+   - API endpoints
+   - Request/Response formats
+   - Authentication/Authorization
+   - API versioning
+
+5. **Technology Stack**
+   - Programming languages
+   - Frameworks
+   - Databases
+   - Third-party libraries
+   - Infrastructure tools
+
+6. **Database Schema** (if applicable)
+   - Entity relationships
+   - Table structures
+   - Indexes
+   - Data constraints
+
+7. **Security Considerations**
+   - Security measures
+   - Authentication mechanisms
+   - Data encryption
+   - Access controls
+
+8. **Deployment Architecture**
+   - Deployment strategy
+   - Environment setup
+   - Configuration management
+
+Make the document technical, detailed, implementation-ready, and suitable for development teams. Use clear technical terminology, diagrams descriptions, and proper formatting.
+

@@ -1,0 +1,288 @@
+Here is the comprehensive Business Requirement Document (BRD) based on the provided client input:
+
+📘 BUSINESS REQUIREMENTS DOCUMENT (BRD)
+
+## 1. Project Overview
+
+**Project Name:** Sales360 Application
+**Objective:** Develop a mobile and web application to manage sales leads, commitments, meetings, and follow-ups for BM and BDO users.
+**Project Type:** Software Application
+**Target Users:** BM, BDO, and other stakeholders involved in the sales process.
+**Business Value:** Improve sales performance, enhance collaboration, and provide real-time insights into the sales pipeline.
+
+---
+
+## 2. Stakeholders
+
+| Role | Responsibility |
+|------|----------------|
+| BM (Business Manager) | Creates lead and commitments, reviews progress |
+| BDO (Business Development Officer) | Creates lead and commitments, follows up with prospects |
+| Sales Team | Uses the application for daily activities |
+
+---
+
+## 3. User Roles & Access
+
+### 3.1 Roles
+
+* **BM** - Business Manager
+* **BDO** - Business Development Officer
+* **Sales Team Member** - Sales Representative
+
+### 3.2 Role Capabilities
+
+| Feature | BM | BDO | Sales Team Member |
+|---------|-----|-----|-----------------|
+| Create Lead | ✅ | ✅ | ❌ |
+| Edit Commitment | ✅ | ✅ | ❌ |
+| View Meetings | ✅ | ✅ | ✅ |
+| Follow Up | ✅ | ✅ | ❌ |
+
+---
+
+## 4. Application Scope
+
+### 4.1 Mobile Application
+
+The mobile application will allow BM and BDO users to:
+
+* Create new leads
+* Edit existing commitments
+* View upcoming meetings
+* Follow up with prospects
+
+#### Core Features
+
+1. **Lead Creation**: Users can create new leads, including mandatory and additional commitment details.
+2. **Commitment Editing**: Users can edit existing commitments, updating status and completion dates.
+3. **Meeting Scheduling**: Users can schedule meetings and appointments.
+
+### 4.2 Web Application (Admin)
+
+The web application will provide an administrative interface for:
+
+* Lead management
+* Commitment tracking
+* Meeting scheduling
+* User management
+
+#### Key Capabilities
+
+* View lead pipeline and commitment status
+* Edit user roles and permissions
+* Generate reports on sales performance
+
+---
+
+## 5. Business Requirements
+
+### BR-001: Lead Creation
+
+**Priority:** High  
+**Description:** Allow BM and BDO users to create new leads, including mandatory and additional commitment details.
+
+**Business Rules:**
+
+* Leads must have a unique identifier
+* Mandatory commitments are required for each lead
+* Additional commitments can be added as needed
+
+**Acceptance Criteria:**
+- ✅ Lead creation is successful when all mandatory commitment fields are filled.
+- ✅ Users can add multiple additional commitments per lead.
+- ✅ The application validates input data and prevents invalid entries.
+
+---
+
+### BR-002: Commitment Editing
+
+**Priority:** Medium  
+**Description:** Allow BM and BDO users to edit existing commitments, updating status and completion dates.
+
+**Business Rules:**
+
+* Commitments must have a unique identifier
+* Status updates require approval from the lead owner (BM or BDO)
+* Completion dates can be updated by the commitment owner
+
+**Acceptance Criteria:**
+- ✅ Commitment editing is successful when all required fields are filled.
+- ✅ The application validates input data and prevents invalid entries.
+- ✅ Approval processes for status updates are implemented.
+
+---
+
+[Continue with BR-003, BR-004, etc. for all business requirements]
+
+---
+
+## 6. Functional Requirements
+
+### FR-001: Lead Creation
+
+**Requirement:** Allow BM and BDO users to create new leads, including mandatory and additional commitment details.
+
+**Implementation Details:**
+
+* The application will validate input data and prevent invalid entries.
+* A unique identifier will be generated for each lead.
+
+**User Flow:**
+1. User clicks the "Create Lead" button
+2. User fills in required fields (name, contact info, etc.)
+3. User adds mandatory commitments (e.g., meeting dates)
+4. User can add additional commitments as needed
+
+---
+
+[Continue with FR-002, FR-003, etc. for all functional requirements]
+
+---
+
+## 7. Technical Overview
+
+### 7.1 System Architecture
+
+```
+Mobile Application 
+|--- Frontend (Flutter) ---|
+|                             |
+|    Backend (Java Spring)   |
+|                             |
+|--- Database (AWS RDS) ---|
+```
+
+### 7.2 Technology Stack
+
+#### Frontend (Flutter)
+
+* Layer 1: UI Components
+	+ Flutter widgets for creating leads, editing commitments, and viewing meetings
+* Layer 2: Business Logic
+	+ Implement business rules and validation logic using Dart language
+* Layer 3: Data Storage
+	+ Store data locally using SQLite or other suitable storage solution
+
+#### Backend (Java Spring)
+
+* Layer 1: RESTful API
+	+ Expose RESTful API endpoints for lead creation, commitment editing, and meeting scheduling
+* Layer 2: Business Logic
+	+ Implement business rules and validation logic using Java language
+* Layer 3: Data Storage
+	+ Store data in AWS RDS database
+
+#### Infrastructure/Cloud (AWS)
+
+* Service | Usage |
+|---------|-------|
+| EC2     | Hosting the application instances |
+| S3      | Storing static assets and files |
+| RDS     | Storing relational data |
+
+---
+
+## 8. Key Modules/Components
+
+### Module: Lead Management
+
+* Feature: Create Lead
+	+ Allow BM and BDO users to create new leads, including mandatory and additional commitment details.
+* Feature: Edit Commitment
+	+ Allow BM and BDO users to edit existing commitments, updating status and completion dates.
+
+---
+
+[Continue for all key modules...]
+
+---
+
+## 9. Database Design (High Level)
+
+### Key Tables
+
+* **leads** - table for storing lead information
+* **commitments** - table for storing commitment details
+* **meetings** - table for storing meeting schedules
+* **users** - table for storing user roles and permissions
+
+---
+
+## 10. Security Requirements
+
+* **Authentication**: Implement authentication mechanism using username/password combination.
+* **Authorization**: Enforce authorization rules based on user roles (BM, BDO, Sales Team).
+* **Data Encryption**: Encrypt sensitive data using suitable encryption algorithms.
+
+---
+
+## 11. Non-Functional Requirements
+
+* **Performance**: The application should respond within 2 seconds to user input.
+* **Scalability**: The application should be able to handle a minimum of 100 concurrent users.
+* **Availability**: The application should be available 99.9% of the time.
+* **Usability**: The application should provide an intuitive and user-friendly interface.
+* **Security**: Implement security measures as outlined above.
+
+---
+
+## 12. User Stories
+
+### US-001: Create Lead
+
+**As a BM or BDO, I want to create a new lead with mandatory commitment details so that I can manage my sales pipeline effectively.**
+
+**Acceptance Criteria:**
+- ✅ The application creates a new lead record.
+- ✅ Mandatory commitment fields are required for each lead.
+
+---
+
+[Continue with US-002, US-003, etc. for all user stories]
+
+---
+
+## CRITICAL INSTRUCTIONS - MUST FOLLOW:
+
+1. **Structure**: Follow the EXACT section numbering and structure shown above. Do not skip any sections.
+
+2. **Formatting**: Use proper markdown formatting with headers (#, ##, ###), tables, emojis (📘, ✅, ❌), code blocks for architecture diagrams, and checkboxes (✅) for acceptance criteria.
+
+3. **Detail Level**: Be comprehensive and detailed. Each section should be fully developed with actual content, not placeholder text.
+
+4. **Numbering**: Use consistent numbering throughout:
+   - Business Requirements: BR-001, BR-002, BR-003, etc.
+   - Functional Requirements: FR-001, FR-002, FR-003, etc.
+   - User Stories: US-001, US-002, US-003, etc.
+
+5. **Tables**: Use tables extensively for:
+   - Stakeholder roles
+   - Role capabilities matrix
+   - Technology stack
+   - Feature comparisons
+   - Glossary terms
+
+6. **Technical Details**: Include detailed technical information:
+   - System architecture (in text/diagram format)
+   - Technology stack (in table format)
+   - Database design (high-level)
+   - Security requirements
+   - Deployment considerations
+
+7. **Client Voice**: In relevant sections, write as if understanding the client's needs directly.
+
+8. **Completeness**: Ensure ALL sections are filled out with actual content based on the client input. Do not leave placeholder text like "[Description]" - provide real, meaningful content.
+
+9. **Professional Quality**: The BRD should be:
+   - Client-ready for sign-off
+   - Suitable for stakeholder review
+   - Professional and polished
+   - Easy to read and navigate
+   - Comprehensive yet concise
+
+10. **Visual Elements**: 
+    - Use emojis strategically (📘 for documents, ✅ for success, ❌ for not available)
+    - Create clear architecture diagrams in text format
+    - Use tables for better readability
+    - Format code blocks properly

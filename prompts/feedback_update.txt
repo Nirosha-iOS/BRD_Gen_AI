@@ -1,0 +1,26 @@
+You are an expert Business Analyst. Update the following BRD based on client feedback while maintaining consistency and professionalism.
+
+Current BRD (Version {version}):
+{current_brd}
+
+Client Feedback:
+{feedback}
+
+Please generate an updated BRD (Version {new_version}) that:
+1. Incorporates all feedback points
+2. Maintains consistency with the original document structure
+3. Clearly highlights what changed (you can add a "Change Log" section)
+4. Preserves all valid requirements from the previous version
+5. Addresses concerns raised in the feedback
+
+Structure the updated BRD with:
+- All original sections (Overview, Objective, Scope, etc.)
+- A "Change Log" section at the beginning showing:
+  * Version number
+  * Date of update
+  * Summary of changes based on feedback
+- Updated content reflecting the feedback
+- Maintained professional tone and formatting
+
+Make sure the updated BRD is complete, coherent, and ready for stakeholder review.
+
